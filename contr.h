@@ -1,9 +1,8 @@
-struct yst_pwm
-{
-	float pwm_a;
-	float pwm_b;
-	float pwm_c;
-};
 
 
-yst_pwm generat_sine(double f);
+extern 	float pwm_a;
+extern 	float pwm_b;
+extern 	float pwm_c;
+	
+
+double generat_sine();

@@ -25,6 +25,7 @@
  */
 /* %%%-SFUNWIZ_wrapper_externs_Changes_BEGIN --- EDIT HERE TO _END */
 /* extern double func(double a); */
+
 /* %%%-SFUNWIZ_wrapper_externs_Changes_END --- EDIT HERE TO _BEGIN */
 
 /*
@@ -43,7 +44,7 @@ void test_f_Outputs_wrapper(const real_T *x,
       y1[0].re = u1[0].re;
       y1[0].im = u1[0].im;
  */
-T[0]=generat_sine(x[0]);
+T[0]=generat_sine();
 y[0]=pwm_a;
 y[1]=pwm_b;
 y[2]=pwm_c;

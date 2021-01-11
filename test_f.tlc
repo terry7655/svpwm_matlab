@@ -1,5 +1,5 @@
 %% File : test_f.tlc
-%% Created : Mon Jan 11 14:14:00 2021
+%% Created : Mon Jan 11 15:42:41 2021
 %%
 %% Description: 
 %%   Simulink Coder wrapper functions interface generated for 
@@ -31,7 +31,8 @@
     extern void test_f_Start_wrapper(void);
 
     extern void test_f_Outputs_wrapper(const real_T *x,
-			real_T *y);
+			real_T *y,
+			real_T *T);
 
     extern void test_f_Terminate_wrapper(void);
 
@@ -53,7 +54,8 @@
   %%
   %assign pu0 = LibBlockInputSignalAddr(0, "", "", 0)
   %assign py0 = LibBlockOutputSignalAddr(0, "", "", 0)
-  test_f_Outputs_wrapper(%<pu0>, %<py0>);
+  %assign py1 = LibBlockOutputSignalAddr(1, "", "", 0)
+  test_f_Outputs_wrapper(%<pu0>, %<py0>, %<py1>);
   %%
 %endfunction
 
